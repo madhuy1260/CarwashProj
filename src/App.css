@@ -27,6 +27,18 @@
 .App-link {
   color: #61dafb;
 }
+.footer {
+  background-color: black;
+  color: white;
+  padding: 3rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+.footerDetails {
+  border: 1px dashed white;
+  max-width: 60%;
+  margin-right: 2rem;
+}
 
 @keyframes App-logo-spin {
   from {

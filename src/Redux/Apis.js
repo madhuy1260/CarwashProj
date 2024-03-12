@@ -1,5 +1,5 @@
 import axios from "axios";
-import { getCategoryAction } from "./Actions";
+import { getCategoryAction, getEachCategoryByIDAction } from "./Actions";
 import * as Constants from "./Constants";
 
 export const getCategoriesAPI = (info) => async (dispatch) => {

@@ -1,0 +1,10 @@
+.BannerContainer {
+  background-image: url(/public/CarwashImages/Demo.jpg);
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.textContainer {
+  padding: 8rem;
+}
