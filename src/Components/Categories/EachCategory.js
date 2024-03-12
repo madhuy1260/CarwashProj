@@ -4,10 +4,20 @@ import { useDispatch } from "react-redux";
 
 import "./Categories.css";
 import { getEachCategoriesByIDAPI } from "../../Redux/Apis";
+import image9 from "../../../src/public/CarwashImages/9.jpg";
+import image7 from "../../../src/public/CarwashImages/7.jpg";
 
 function EachCategory() {
-  const eachCategoryData = [1, 2];
-  const eachCategoryData2 = [1, 2, 3, 4];
+  const eachCategoryData = [
+    { text: "Spa for Women" },
+    { text: "laser Hair Reduction" },
+  ];
+  const eachCategoryData2 = [
+    { text: "Salon for Women" },
+    { text: "AC Repair" },
+    { text: "Home Full Cleaning" },
+    { text: "Massage for Men" },
+  ];
 
   const dispatch = useDispatch();
 
@@ -22,22 +32,30 @@ function EachCategory() {
 
   return (
     <div>
-      <div className="container-fluid">
-        <div className="row">Our Services</div>
-        <div className="row">
+      <div className="container-fluid" style={{ backgroundColor: "#F0A696" }}>
+        <div className="row HomeHeading" style={{ textAlign: "center" }}>
+          New And NoteWorthy
+        </div>
+        <div className="row" style={{ paddingTop: "1rem" }}>
           {eachCategoryData.map((each) => (
             <div className="col-sm-6">
-              <img className="categoryImage" alt="" src="" />
-              <p>Text</p>
+              <img className="categoryImage" alt="" src={image7} />
+              <p style={{ fontSize: "1rem", textAlign: "center" }}>
+                {each.text}
+              </p>
             </div>
           ))}
         </div>
-        <div className="row">Our Services</div>
+        <div className="row HomeHeading " style={{ textAlign: "center" }}>
+          Most Booked Services
+        </div>
         <div className="row">
           {eachCategoryData2.map((each) => (
             <div className="col-sm-3">
-              <img className="categoryImage" alt="" src="" />
-              <p>Text</p>
+              <img className="categoryImage" alt="" src={image9} />
+              <p style={{ fontSize: "1rem", textAlign: "center" }}>
+                {each.text}
+              </p>
             </div>
           ))}
         </div>

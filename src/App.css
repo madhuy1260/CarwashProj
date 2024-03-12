@@ -39,6 +39,11 @@
   max-width: 60%;
   margin-right: 2rem;
 }
+.HomeHeading {
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
 
 @keyframes App-logo-spin {
   from {

@@ -6,24 +6,32 @@ import InputGroup from "react-bootstrap/InputGroup";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import Container from "react-bootstrap/Container";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 function Header() {
   return (
     <div>
-      <Navbar className="bg-body-tertiary justify-content-between">
+      <Navbar className="bg-body-tertiary justify-content-center">
         <Form inline>
           <Row>
             <Col xs="auto">
-              <Form.Control
-                type="text"
-                placeholder="Search"
-                className=" mr-sm-2"
-              />
+              <InputGroup>
+                <InputGroup.Text id="basic-addon1">
+                  <FontAwesomeIcon icon={faSearch} />
+                </InputGroup.Text>
+                <Form.Control
+                  type="text"
+                  placeholder="Search"
+                  className=" mr-sm-2"
+                />
+              </InputGroup>
             </Col>
             <Col xs="auto">
-              <Button type="submit">Submit</Button>
+              <Button type="submit" variant="dark">
+                Sign In
+              </Button>
             </Col>
           </Row>
         </Form>
@@ -31,7 +39,7 @@ function Header() {
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container fluid>
           <Navbar.Brand href="#" style={{ marginRight: "10rem" }}>
-            Navbar Logo
+            Logo
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
@@ -41,11 +49,11 @@ function Header() {
               navbarScroll
             >
               <Nav.Link href="#action1">Home</Nav.Link>
-              <Nav.Link href="#action2">Link</Nav.Link>
-
-              <Nav.Link href="#" disabled>
-                Link
-              </Nav.Link>
+              <Nav.Link href="#action2">Services</Nav.Link>
+              <Nav.Link href="#action2">Cleaning</Nav.Link>
+              <Nav.Link href="#action2">Massage</Nav.Link>
+              <Nav.Link href="#action2">Repair</Nav.Link>
+              <Nav.Link href="#action2">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
