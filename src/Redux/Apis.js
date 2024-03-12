@@ -9,7 +9,8 @@ export const getCategoriesAPI = (info) => async (dispatch) => {
 
   var config = {
     method: "get",
-    url: process.env.REACT_APP_API_URL + "LoginStoreUser",
+    // url: process.env.REACT_APP_API_URL + "LoginStoreUser",
+    url: "http://3.110.219.181:8080/api/v1/public/categories?pageNumber=0&pageSize=5&sortBy=categoryId&sortOrder=asc",
     headers: { "Content-Type": "application/json" },
     data: data,
   };
@@ -67,7 +68,8 @@ export const getEachCategoriesByIDAPI = (info) => async (dispatch) => {
 
   var config = {
     method: "get",
-    url: process.env.REACT_APP_API_URL + "LoginStoreUser",
+    // url: process.env.REACT_APP_API_URL + "LoginStoreUser",
+    url: "http://3.110.219.181:8080/api/v1/public/categories/2/products?pageNumber=0&pageSize=2&sortBy=productId&sortOrder=asc",
     headers: { "Content-Type": "application/json" },
     data: data,
   };
