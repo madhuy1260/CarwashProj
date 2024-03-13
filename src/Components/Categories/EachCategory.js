@@ -33,13 +33,23 @@ function EachCategory() {
   return (
     <div>
       <div className="container-fluid" style={{ backgroundColor: "#F0A696" }}>
-        <div className="row HomeHeading" style={{ textAlign: "center" }}>
+        <div
+          className="row HomeHeading"
+          style={{ textAlign: "center", marginTop: "2rem" }}
+        >
           New And NoteWorthy
         </div>
-        <div className="row" style={{ paddingTop: "1rem" }}>
+        <div
+          className="row"
+          style={{
+            paddingTop: "1rem",
+            marginBottom: "4rem",
+            marginTop: "4rem",
+          }}
+        >
           {eachCategoryData.map((each) => (
             <div className="col-sm-6">
-              <img className="categoryImage" alt="" src={image7} />
+              <img className="categoryImage2" alt="" src={image7} />
               <p style={{ fontSize: "1rem", textAlign: "center" }}>
                 {each.text}
               </p>
@@ -49,10 +59,10 @@ function EachCategory() {
         <div className="row HomeHeading " style={{ textAlign: "center" }}>
           Most Booked Services
         </div>
-        <div className="row">
+        <div className="row" style={{ paddingBottom: "4rem" }}>
           {eachCategoryData2.map((each) => (
             <div className="col-sm-3">
-              <img className="categoryImage" alt="" src={image9} />
+              <img className="categoryImage4" alt="" src={image9} />
               <p style={{ fontSize: "1rem", textAlign: "center" }}>
                 {each.text}
               </p>

@@ -45,15 +45,27 @@ function Header() {
           <Navbar.Collapse id="navbarScroll">
             <Nav
               className="me-auto my-2 my-lg-0"
-              style={{ maxHeight: "100px" }}
+              style={{ maxHeight: "100vh", textAlign: "center" }}
               navbarScroll
             >
-              <Nav.Link href="#action1">Home</Nav.Link>
-              <Nav.Link href="#action2">Services</Nav.Link>
-              <Nav.Link href="#action2">Cleaning</Nav.Link>
-              <Nav.Link href="#action2">Massage</Nav.Link>
-              <Nav.Link href="#action2">Repair</Nav.Link>
-              <Nav.Link href="#action2">Contact</Nav.Link>
+              <Nav.Link href="#action1" className="navElement">
+                Home
+              </Nav.Link>
+              <Nav.Link href="#action2" className="navElement">
+                Services
+              </Nav.Link>
+              <Nav.Link href="#action2" className="navElement">
+                Cleaning
+              </Nav.Link>
+              <Nav.Link href="#action2" className="navElement">
+                Massage
+              </Nav.Link>
+              <Nav.Link href="#action2" className="navElement">
+                Repair
+              </Nav.Link>
+              <Nav.Link href="#action2" className="navElement">
+                Contact
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

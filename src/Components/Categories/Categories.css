@@ -1,8 +1,18 @@
 .categoryImage {
   width: 100%;
-  height: 15rem;
+  height: 25rem;
   border-radius: 8px;
 }
 .CategoryContainer {
   padding: 1rem;
+}
+.categoryImage4 {
+  width: 100%;
+  height: 22rem;
+  border-radius: 8px;
+}
+.categoryImage2 {
+  width: 100%;
+  height: 20rem;
+  border-radius: 8px;
 }

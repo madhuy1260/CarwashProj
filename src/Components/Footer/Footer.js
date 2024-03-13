@@ -45,7 +45,7 @@ function Footer() {
       <div className="row" style={{ margin: "2rem", fontSize: "2rem" }}>
         Logo
       </div>
-      <div className="row">
+      <div className="row" style={{ marginBottom: "14rem" }}>
         <div className="col-sm-3">For Company</div>
         <div className="col-sm-3">For Customers</div>
         <div className="col-sm-3">For Partners</div>

@@ -7,13 +7,19 @@ import untitled from "../../../src/public/CarwashImages/Untitled.png";
 function TeamDetails() {
   const teamData = [1, 2, 3, 4, 5, 6];
   return (
-    <div className="container-fluid" style={{ padding: "2rem" }}>
+    <div
+      className="container-fluid"
+      style={{ padding: "2rem", marginTop: "2rem" }}
+    >
       <div className="row">
         <div className="col-sm-12">
           <img className="categoryImage" alt="" src={untitled} />
         </div>
       </div>
-      <h4 className="row HomeHeading" style={{ textAlign: "center" }}>
+      <h4
+        className="row HomeHeading"
+        style={{ textAlign: "center", marginTop: "4rem" }}
+      >
         Our Team is Ready to Serve you
       </h4>
       <div className="row">

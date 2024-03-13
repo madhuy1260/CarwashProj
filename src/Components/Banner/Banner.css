@@ -1,9 +1,10 @@
 .BannerContainer {
   background-image: url("/src//public//CarwashImages/main.jpg");
-  height: 80vh;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 70%;
 }
 .textContainer {
   padding: 8rem;

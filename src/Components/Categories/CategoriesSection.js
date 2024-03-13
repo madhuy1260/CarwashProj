@@ -17,7 +17,7 @@ function CategoriesSection() {
   console.log("Category_Data", Category_Data);
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid" style={{ marginTop: "4rem" }}>
       <div className="row HomeHeading">Our Services</div>
       <div className="row">
         {Categorydata.map((each, i) => (
